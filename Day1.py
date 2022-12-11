@@ -2,7 +2,9 @@ import cProfile
 
 class Decoder1:
     def __init__(self, seq):
-        print(max( [sum(map(int, s)) for s in seq] ))
+        l = [sum(map(int, s)) for s in seq]
+        print(max( l ))
+        print(sum(sorted(l)[-3:]))
 
 
 if __name__ == '__main__':
