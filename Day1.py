@@ -11,5 +11,4 @@ if __name__ == '__main__':
 
     f = open('Day1.txt', mode='r')
     seq = [x.split('\n') for x in f.read().split('\n\n')]
-    #cProfile.run('Decoder1(seq)')
-    Decoder1(seq)
+    cProfile.run('Decoder1(seq)')
